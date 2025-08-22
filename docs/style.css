@@ -36,6 +36,10 @@ nav {
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 2px;
+  background: linear-gradient(135deg, #58a6ff, #a259ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .navbar {
   list-style: none;
