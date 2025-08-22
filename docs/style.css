@@ -131,6 +131,13 @@ nav {
   margin: 0;
 }
 
+.intro-section h1 .name-gradient {
+  background: linear-gradient(90deg, #82aaff, #c77dff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .intro-section p {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
@@ -223,6 +230,34 @@ nav {
   border-radius: 20px;
   font-weight: 500;
   margin-bottom: 0.5rem;
+}
+
+/* Animation Classes */
+.hidden {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.hidden.visible {
+  opacity: 1;
+}
+
+.slide-in-left {
+  transform: translateX(-100%);
+  transition: transform 1s ease-out;
+}
+
+.slide-in-left.visible {
+  transform: translateX(0);
+}
+
+.slide-in-right {
+  transform: translateX(100%);
+  transition: transform 1s ease-out;
+}
+
+.slide-in-right.visible {
+  transform: translateX(0);
 }
 
 /* Projects Section */
@@ -356,94 +391,15 @@ nav {
 }
 
 /* Footer */
-footer {
-  background: #161b22;
-  color: #fff;
-  text-align: center;
-  padding: 1.2rem 0;
-  margin-top: 2rem;
-  font-size: 1rem;
-  border-top: 1px solid #30363d;
-}
-
 .main-footer {
   background-color: #161b22;
   color: #8b949e;
-  padding-top: 40px;
+  padding: 0; /* Reset padding */
   border-top: 1px solid #30363d;
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  padding-bottom: 40px;
-}
-
-.footer-logo {
-  display: inline-block;
-  background: linear-gradient(135deg, #58a6ff, #a259ff);
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 15px;
-}
-
-.footer-title {
-  font-size: 1.1rem;
-  color: #c9d1d9;
-  margin-bottom: 15px;
-}
-
-.footer-about p,
-.footer-social p {
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
-.footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links ul li a {
-  color: #8b949e;
-  text-decoration: none;
-  font-size: 0.9rem;
-  margin-bottom: 10px;
-  display: inline-block;
-  transition: color 0.3s ease;
-}
-
-.footer-links ul li a:hover {
-  color: #58a6ff;
-}
-
-.social-icons {
-  display: flex;
-  gap: 15px;
-  margin-top: 15px;
-}
-
-.social-icons a img {
-  width: 24px;
-  height: 24px;
-  filter: invert(0.8);
-  transition: filter 0.3s ease;
-}
-
-.social-icons a:hover img {
-  filter: invert(1);
+  margin-top: 2rem;
 }
 
 .footer-bottom {
-  border-top: 1px solid #30363d;
   padding: 20px 0;
 }
 
@@ -451,7 +407,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 #back-to-top {
