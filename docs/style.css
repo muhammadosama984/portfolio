@@ -372,7 +372,11 @@ nav {
 .project-tech img {
   width: 20px;
   height: 20px;
-  filter: brightness(1.5);
+  filter: none;
+}
+
+.project-tech img.mono-icon {
+  filter: invert(1);
 }
 
 /* Blogs Section */
