@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects - Muhammad Osama</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="theme-color" content="#070a12" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,7 +19,7 @@
         <div class="logo">Muhammad Osama</div>
         <ul class="navbar">
           <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
+          <li><a class="active" href="projects.html">Projects</a></li>
           <li><a href="blogs.html">Blogs</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -23,7 +30,7 @@
       <section id="projects" class="projects-section container">
         <h2 class="section-title">Projects</h2>
         <div class="projects-grid">
-          <div class="project-card">
+          <div class="project-card reveal">
             <img
               src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80"
               alt="CodeSync version control CLI"
@@ -65,7 +72,7 @@
             </div>
           </div>
 
-          <div class="project-card">
+          <div class="project-card reveal">
             <img
               src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80"
               alt="BidBuy marketplace"
@@ -106,7 +113,7 @@
             </div>
           </div>
 
-          <div class="project-card">
+          <div class="project-card reveal">
             <img
               src="https://images.unsplash.com/photo-1611746872915-64382b5c76da?auto=format&fit=crop&w=1200&q=80"
               alt="Chat application"
@@ -149,7 +156,7 @@
             </div>
           </div>
 
-          <div class="project-card">
+          <div class="project-card reveal">
             <img
               src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80"
               alt="Rate limiter system"
@@ -196,7 +203,7 @@
       <section id="open-source" class="projects-section container">
         <h2 class="section-title">Open Source Contributions</h2>
         <div class="projects-grid">
-          <div class="project-card oss-card">
+          <div class="project-card oss-card reveal">
             <div class="project-content">
               <div class="project-header">
                 <h3 class="project-title">n8n</h3>
@@ -225,7 +232,7 @@
             </div>
           </div>
 
-          <div class="project-card oss-card">
+          <div class="project-card oss-card reveal">
             <div class="project-content">
               <div class="project-header">
                 <h3 class="project-title">LangChainJS</h3>
@@ -264,63 +271,63 @@
       <section class="tech-skills-section container">
         <h2 class="section-title">TECH SKILLS</h2>
         <div class="skills-grid">
-          <div class="skill-item">
+          <div class="skill-item reveal">
             <img src="icons/javascript-logo-svgrepo-com.svg" alt="JavaScript" />
             <p>JavaScript</p>
           </div>
-          <div class="skill-item">
+          <div class="skill-item reveal">
             <img src="icons/typescript-svgrepo-com.svg" alt="TypeScript" />
             <p>TypeScript</p>
           </div>
-          <div class="skill-item">
+          <div class="skill-item reveal">
             <img src="icons/python-svgrepo-com.svg" alt="Python" />
             <p>Python</p>
           </div>
-          <div class="skill-item">
+          <div class="skill-item reveal">
             <img src="icons/Kotlin.svg" alt="Kotlin" />
             <p>Kotlin</p>
           </div>
-          <div class="skill-item">
+          <div class="skill-item reveal">
             <img src="icons/react-svgrepo-com.svg" alt="React" />
             <p>React</p>
           </div>
-          <div class="skill-item">
+          <div class="skill-item reveal">
             <img src="icons/nodejs-logo-svgrepo-com.svg" alt="Node.js" />
             <p>Node.js</p>
           </div>
-          <div class="skill-item">
+          <div class="skill-item reveal">
             <img src="icons/angular-icon.svg" alt="Angular" />
             <p>Angular</p>
           </div>
-          <div class="skill-item">
+          <div class="skill-item reveal">
             <img src="icons/Nest.js.svg" alt="NestJS" />
             <p>NestJS</p>
           </div>
-          <div class="skill-item">
+          <div class="skill-item reveal">
             <img src="icons/spring-3.svg" alt="SpringBoot" />
             <p>SpringBoot</p>
           </div>
-          <div class="skill-item">
+          <div class="skill-item reveal">
             <img src="icons/redis-logo-svgrepo-com.svg" alt="Redis" />
             <p>Redis</p>
           </div>
-          <div class="skill-item">
+          <div class="skill-item reveal">
             <img src="icons/mysql-logo-svgrepo-com.svg" alt="MySQL" />
             <p>MySQL</p>
           </div>
-          <div class="skill-item">
+          <div class="skill-item reveal">
             <img src="icons/mongodb-ar21.svg" alt="MongoDB" />
             <p>MongoDB</p>
           </div>
-          <div class="skill-item">
+          <div class="skill-item reveal">
             <img src="icons/java-4-logo-svgrepo-com.svg" alt="Java" />
             <p>Java</p>
           </div>
-          <div class="skill-item">
+          <div class="skill-item reveal">
             <img src="icons/docker-svgrepo-com.svg" alt="Docker" />
             <p>Docker</p>
           </div>
-          <div class="skill-item">
+          <div class="skill-item reveal">
             <img src="icons/amazon-web-services-logo.svg" alt="AWS" />
             <p>AWS</p>
           </div>
@@ -335,5 +342,21 @@
         </div>
       </div>
     </footer>
+      <script>
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+      document
+        .querySelectorAll(".reveal")
+        .forEach((el) => revealObserver.observe(el));
+    </script>
   </body>
 </html>
