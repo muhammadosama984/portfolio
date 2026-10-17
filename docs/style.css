@@ -638,3 +638,44 @@ nav {
   align-items: center;
   gap: 0.5rem;
 }
+
+/* Open Source Contributions */
+.oss-pr-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px;
+}
+
+.oss-pr-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px;
+  padding: 6px 0;
+  font-size: 0.9rem;
+  color: #8b949e;
+  border-bottom: 1px solid #30363d;
+}
+
+.oss-pr-list li:last-child {
+  border-bottom: none;
+}
+
+.oss-pr-list a {
+  color: #58a6ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.oss-pr-list a:hover {
+  text-decoration: underline;
+}
+
+.oss-badge {
+  font-style: normal;
+  font-size: 0.7rem;
+  padding: 1px 8px;
+  border-radius: 10px;
+  background-color: #238636;
+  color: #fff;
+}
