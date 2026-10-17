@@ -3,7 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Muhammad Osama - Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="theme-color" content="#070a12" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,6 +19,7 @@
         <div class="logo">Muhammad Osama</div>
 
         <ul class="navbar">
+          <li><a class="active" href="index.html">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="blogs.html">Blogs</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -20,12 +28,15 @@
     </nav>
     <header class="intro-section container">
       <div class="intro-flex">
-        <img
-          src="49d0c488-ae77-48f6-b3bd-8326aa9d37d3.png"
-          alt="Muhammad Osama"
-          class="profile-pic"
-        />
+        <div class="profile-wrap">
+          <img
+            src="49d0c488-ae77-48f6-b3bd-8326aa9d37d3.png"
+            alt="Muhammad Osama"
+            class="profile-pic"
+          />
+        </div>
         <div class="intro-text">
+          <span class="eyebrow">Software Engineer II @ Rewaa</span>
           <div class="greeting">
             <h1>Hello, I'm <span class="name-gradient">Osama</span></h1>
             <span class="wave">👋</span>
@@ -61,10 +72,11 @@
       </div>
     </header>
 
-    <section id="about" class="about-section container">
+
+    <section id="about" class="about-section container reveal">
       <h2 class="section-title">About Me</h2>
       <p>
-        I have more than 2 years of experience as software engineer,
+        I have more than 3 years of experience as software engineer,
         specializing in full-stack development. My journey in software
         development began with a bachelor's degree in Computer Science, which
         laid a solid foundation in programming and problem-solving skills.
@@ -81,20 +93,15 @@
         communication.
       </p>
       <p>
-        I am always eager to learn and grow. Apart from my work, I regularly
-        engage in professional development activities. This includes taking
-        online courses to stay updated with the latest technological trends.
-      </p>
-      <p>
         In my free time, I enjoy attending tech meetups and seminars. I love
         playing and watching football and read a lot about financial markets.
       </p>
     </section>
 
-    <section id="experience" class="experience-section container">
+    <section id="experience" class="experience-section container reveal">
       <h2 class="section-title">Experience</h2>
       <div class="experience-list">
-        <article class="experience-item">
+        <article class="experience-item reveal">
           <div class="experience-head">
             <h3>Rewaa - Software Engineer II</h3>
             <span>September 2025 - Present</span>
@@ -108,7 +115,7 @@
           </ul>
         </article>
 
-        <article class="experience-item">
+        <article class="experience-item reveal">
           <div class="experience-head">
             <h3>Rewaa - Software Engineer I</h3>
             <span>April 2024 - August 2025</span>
@@ -123,7 +130,7 @@
           </ul>
         </article>
 
-        <article class="experience-item">
+        <article class="experience-item reveal">
           <div class="experience-head">
             <h3>DigitalHire - Software Engineer I</h3>
             <span>June 2023 - April 2024</span>
@@ -137,7 +144,7 @@
           </ul>
         </article>
 
-        <article class="experience-item">
+        <article class="experience-item reveal">
           <div class="experience-head">
             <h3>Astera, Pakistan - Software Engineer Intern</h3>
             <span>June 2022 - August 2022</span>
@@ -161,6 +168,21 @@
     </footer>
 
     <script>
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+      document
+        .querySelectorAll(".reveal")
+        .forEach((el) => revealObserver.observe(el));
+
       const backToTopButton = document.getElementById("back-to-top");
 
       window.addEventListener("scroll", () => {
