@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="t d">
+  <title id="t">A handwritten daily plan in a notebook</title>
+  <desc id="d">A notebook page dated Tuesday with three top priorities, one blocker to ask about, and a rough schedule with two focus blocks.</desc>
+  <rect width="640" height="420" fill="#121a2e"/>
+  <g transform="rotate(-1.5 320 210)">
+    <rect x="46" y="26" width="552" height="372" rx="8" fill="#000" opacity=".3" transform="translate(5 7)"/>
+    <rect x="40" y="20" width="552" height="372" rx="8" fill="#f1e7cf"/>
+    <rect x="40" y="20" width="26" height="372" rx="6" fill="#6ea8ff"/>
+    <g fill="#121a2e">
+      <circle cx="53" cy="56" r="5"/><circle cx="53" cy="116" r="5"/><circle cx="53" cy="176" r="5"/>
+      <circle cx="53" cy="236" r="5"/><circle cx="53" cy="296" r="5"/><circle cx="53" cy="356" r="5"/>
+    </g>
+    <g stroke="#cdc1a3" stroke-width="1.4">
+      <line x1="84" y1="86" x2="574" y2="86"/>
+      <line x1="84" y1="118" x2="574" y2="118"/>
+      <line x1="84" y1="150" x2="574" y2="150"/>
+      <line x1="84" y1="182" x2="574" y2="182"/>
+      <line x1="84" y1="214" x2="574" y2="214"/>
+      <line x1="84" y1="246" x2="574" y2="246"/>
+      <line x1="84" y1="278" x2="574" y2="278"/>
+      <line x1="84" y1="310" x2="574" y2="310"/>
+      <line x1="84" y1="342" x2="574" y2="342"/>
+      <line x1="84" y1="374" x2="574" y2="374"/>
+    </g>
+    <line x1="312" y1="100" x2="312" y2="380" stroke="#e6a3a3" stroke-width="1.4"/>
+
+    <g font-family="'Bradley Hand','Segoe Print','Marker Felt','Comic Sans MS',cursive" fill="#2b3a6b">
+      <text x="90" y="76" font-size="26" font-weight="700">Tue 11 Nov</text>
+
+      <!-- left column -->
+      <text x="90" y="112" font-size="19" font-weight="700" text-decoration="underline">Top 3</text>
+      <g fill="none" stroke="#2b3a6b" stroke-width="2" stroke-linecap="round">
+        <rect x="92" y="127" width="14" height="14" rx="2"/>
+        <path d="M95 134 l4 5 l8 -11"/>
+        <rect x="92" y="159" width="14" height="14" rx="2"/>
+        <rect x="92" y="191" width="14" height="14" rx="2"/>
+      </g>
+      <text x="116" y="140" font-size="17" text-decoration="line-through">fix retry bug in webhook</text>
+      <text x="116" y="172" font-size="17">review the refunds PR</text>
+      <text x="116" y="204" font-size="17">write docs for /refunds</text>
+
+      <text x="90" y="244" font-size="19" font-weight="700" text-decoration="underline">Blocked</text>
+      <text x="90" y="268" font-size="17">staging DB access</text>
+      <text x="90" y="292" font-size="17" fill="#b04a4a">-&gt; ask in #infra at 9:45</text>
+
+      <text x="90" y="340" font-size="19" font-weight="700" text-decoration="underline">Tomorrow starts with</text>
+      <text x="90" y="364" font-size="17">load tests for the queue</text>
+
+      <!-- right column -->
+      <text x="326" y="112" font-size="19" font-weight="700" text-decoration="underline">Day</text>
+      <text x="326" y="140" font-size="17">9:30   focus block (no Slack)</text>
+      <text x="326" y="172" font-size="17">11:30  stand-up + replies</text>
+      <text x="326" y="204" font-size="17">1:00   lunch, away from desk</text>
+      <text x="326" y="236" font-size="17">2:00   focus block #2</text>
+      <text x="326" y="268" font-size="17">4:30   update the team</text>
+      <text x="326" y="300" font-size="17">5:30   laptop closed</text>
+    </g>
+  </g>
+</svg>

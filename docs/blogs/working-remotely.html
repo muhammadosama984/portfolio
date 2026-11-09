@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I Was Stuck for Three Hours Because I Didn't Want to Bother Anyone - Muhammad Osama</title>
+    <meta
+      name="description"
+      content="Notes from working remotely: how to ask for help, how async communication really works, Slack habits, and a plain desk setup."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="theme-color" content="#070a12" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container nav-container">
+        <div class="logo">Muhammad Osama</div>
+        <ul class="navbar">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a class="active" href="../blogs.html">Blogs</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container">
+      <article class="post">
+        <a class="post-back" href="../blogs.html">&larr; All blogs</a>
+
+        <header class="post-header">
+          <p class="post-meta">November 10, 2026 &middot; 8 min read</p>
+          <h1>I Was Stuck for Three Hours Because I Didn't Want to Bother Anyone</h1>
+          <p class="post-lede">
+            What I've learned about asking for help, writing async, and getting
+            through a remote workday without losing your mind.
+          </p>
+        </header>
+
+        <p>
+          A few months into working from home, I lost an entire afternoon to a
+          bug that turned out to be one wrong environment variable.
+        </p>
+        <p>
+          Not a hard bug. The kind a teammate would have spotted in thirty
+          seconds. In an office, someone would have walked past my screen and
+          said "hey, is that the staging config?" At home, nobody walks past.
+          Nobody sees you frowning. The only person who knows you're stuck is
+          you, and I had decided I wasn't stuck <em>enough</em> yet to
+          interrupt anyone.
+        </p>
+        <p>
+          Three hours later I finally typed the whole problem out in Slack,
+          mostly so I could say I'd tried everything. Halfway through writing
+          it, I saw the mistake myself. I sent the message anyway, with a
+          "never mind, found it" at the end. A teammate replied within six
+          minutes: "ha, that one gets everyone."
+        </p>
+        <p>
+          That afternoon taught me more about remote work than any setup guide.
+          The hard part isn't the distance. It's that everything which used to
+          happen by accident now has to happen on purpose: asking for help,
+          knowing what everyone else is doing, even knowing when to stop for the
+          day.
+        </p>
+        <p>Here's what I do now. None of it is fancy.</p>
+
+        <h2>The setup is boring on purpose</h2>
+        <p>
+          A laptop, one monitor, a keyboard, a mouse, and a paper notebook. That's
+          it. I keep Slack and docs on the laptop screen and code on the
+          monitor, so I'm never alt-tabbing between "the thing I'm building" and
+          "the person who's asking me something."
+        </p>
+
+        <figure>
+          <img
+            src="../images/remote-desk-setup.svg"
+            alt="Illustration of a simple desk: a laptop on the left, one monitor showing code in the middle, a keyboard and mouse in front, and a notebook with a pen at the front left."
+            width="800"
+            height="450"
+          />
+          <figcaption>
+            Laptop for chat and docs, monitor for code, notebook for the plan.
+          </figcaption>
+        </figure>
+
+        <p>
+          If I had to give up one of those things, it wouldn't be the monitor.
+          It'd be the notebook, which brings me to the first habit.
+        </p>
+
+        <h2>Plan your day before you open Slack</h2>
+        <p>
+          If you don't decide what your day is about, your inbox will decide for
+          you. So the first ten minutes of my day are for the notebook, before
+          any chat app is open.
+        </p>
+        <p>I write down four things:</p>
+        <ul>
+          <li>The three things I want finished today. Three, not eight.</li>
+          <li>
+            Anything I'm blocked on, and who I need to ask. This is the one that
+            would've saved my afternoon.
+          </li>
+          <li>
+            A rough shape for the day: when I'll focus, when I'll answer
+            messages, when I'll eat.
+          </li>
+          <li>What I'll start with tomorrow (written the evening before).</li>
+        </ul>
+
+        <figure>
+          <img
+            src="../images/daily-plan-notebook.svg"
+            alt="A handwritten notebook page for Tuesday listing three top tasks, one blocker to raise in the infra channel, and a schedule with two focus blocks."
+            width="640"
+            height="420"
+          />
+          <figcaption>
+            Nothing clever. It just has to fit on one page, so it stays honest.
+          </figcaption>
+        </figure>
+
+        <p>
+          That last one matters more than it looks. Ending the day with "tomorrow
+          starts with X" means I don't spend the first half hour working out
+          where I left off.
+        </p>
+
+        <h2>How to ask for help when nobody can see you struggle</h2>
+        <p>
+          Most people wait too long to ask, and then ask badly. I've done both.
+          This is what works for me.
+        </p>
+
+        <h3>Give yourself a timer</h3>
+        <p>
+          I use thirty minutes of honest effort. If I'm still stuck after that,
+          I ask. Pick your own number, but pick one. Without a number, pride
+          fills the gap and three hours go by.
+        </p>
+
+        <h3>Write the question so it can be answered without a call</h3>
+        <p>
+          A good question has what you're trying to do, what you expected, what
+          actually happened, and what you already tried. Add the error text or a
+          link. That's most of the work, and it often solves the problem before
+          you hit send. Compare these two:
+        </p>
+
+        <div class="msg msg-bad">
+          <span class="msg-tag">Hard to answer</span>
+          <p class="msg-author"><strong>You</strong> <span>10:42</span></p>
+          <p>hey, are you free for a quick call? the build is failing</p>
+        </div>
+
+        <div class="msg msg-good">
+          <span class="msg-tag">Easy to answer</span>
+          <p class="msg-author"><strong>You</strong> <span>10:42</span></p>
+          <p>
+            Build fails on the payments branch since this morning:
+            <code>Missing env var PAYMENTS_API_URL</code> in CI (log
+            attached). Works locally. I've checked the var exists in the staging
+            config and re-run twice. My guess is CI secrets aren't synced, but I
+            can't see them. Could someone with CI access take a look? Not
+            urgent, but I can't merge until it's green. Happy to jump on a call
+            if that's faster.
+          </p>
+        </div>
+
+        <p>
+          The second one takes ninety seconds longer to write and saves everyone
+          a context switch. The person answering can do it between two other
+          things, which is exactly what you want.
+        </p>
+
+        <h3>Ask in a channel, not a DM</h3>
+        <p>
+          When it's not sensitive, post in the team channel. More people can
+          answer, the answer is searchable later, and the next person who hits
+          the same thing finds it instead of asking again. It also makes asking
+          feel more normal for everyone, especially the newest person on the
+          team.
+        </p>
+
+        <h3>Say what kind of help you need, and by when</h3>
+        <p>
+          "A pointer is enough" and "I need fifteen minutes of pairing" are very
+          different requests. And "no rush" or "I'd like to merge by 4" lets
+          people prioritise without guessing.
+        </p>
+
+        <h2>Async, in plain words</h2>
+        <p>
+          Asynchronous communication just means you don't need the other person
+          to answer right now. You send something, they respond when they can,
+          and neither of you stops what you're doing. A meeting or a call is
+          synchronous. A well-written message or a doc is async.
+        </p>
+        <p>
+          It matters most when your team is spread across time zones, but it
+          helps even in the same city. Every interruption you skip is focus
+          someone keeps.
+        </p>
+        <p>The habits that make it work:</p>
+        <ul>
+          <li>
+            <strong>Write for someone reading in three hours with no context.</strong>
+            They weren't in your head when you wrote it. Include the link, the
+            ticket, the screenshot.
+          </li>
+          <li>
+            <strong>Put the ask first.</strong> "Can you review this by Thursday?"
+            goes in the first line, with the background underneath.
+          </li>
+          <li>
+            <strong>One topic per message.</strong> Three questions in one
+            message gets you an answer to one of them.
+          </li>
+          <li>
+            <strong>Offer a default.</strong> "If I don't hear back by 3pm, I'll
+            go with option A." Now silence isn't a blocker.
+          </li>
+          <li>
+            <strong>Agree on response times.</strong> Hours, not minutes. If
+            everyone replies instantly, it isn't async anymore, it's just slow
+            chat.
+          </li>
+          <li>
+            <strong>Know when to stop typing.</strong> If a thread goes past
+            four or five back-and-forths, hop on a quick call, then post a
+            two-line summary of what you decided.
+          </li>
+        </ul>
+
+        <div class="callout">
+          <strong>Try this at the end of your day:</strong> post a short update
+          with three lines: done, next, blocked. Nobody has to ask what you're up
+          to, and whoever picks up in another time zone knows where things stand.
+        </div>
+
+        <h2>Slack habits that save everyone's attention</h2>
+        <p>
+          Slack is a great tool and an easy way to be distracted all day. A few
+          things that made it work for me instead of against me:
+        </p>
+        <ul>
+          <li>
+            <strong>Reply in threads.</strong> It keeps the channel readable and
+            lets people mute a conversation that isn't theirs.
+          </li>
+          <li>
+            <strong>Don't send just "hi".</strong> Say what you need in the first
+            message. Then the other person can answer whenever they see it,
+            instead of replying "hi" and waiting.
+          </li>
+          <li>
+            <strong>Use your status honestly.</strong> "Heads down until 2pm" or
+            "at lunch" tells people not to expect a quick answer, so they don't
+            wonder.
+          </li>
+          <li>
+            <strong>Set notification hours and use Do Not Disturb.</strong> I keep
+            mentions and DMs on and silence everything else during focus blocks.
+          </li>
+          <li>
+            <strong>Mute channels you don't need.</strong> You don't have to read
+            everything. Being in a channel isn't the same as owing it your
+            attention.
+          </li>
+          <li>
+            <strong>Use reactions instead of "ok" messages.</strong> ✅ for done,
+            👀 for "looking at it". It acknowledges without adding noise.
+          </li>
+          <li>
+            <strong>Schedule send</strong> if a teammate is offline. A message
+            that lands at 9am their time beats one that buzzes their phone at
+            midnight.
+          </li>
+          <li>
+            <strong>Use <code>/remind</code></strong> for follow-ups, like
+            <code>/remind me to check the deploy at 4pm</code>, so you can stop
+            keeping things in your head.
+          </li>
+          <li>
+            <strong>Save huddles for quick things,</strong> and write down the
+            outcome afterwards. If it only happened on a call, it didn't happen
+            for everyone who wasn't on it.
+          </li>
+          <li>
+            <strong>@mention people who need to act,</strong> and save
+            <code>@channel</code> for things that really are for everyone.
+          </li>
+        </ul>
+
+        <h2>A few other things that helped</h2>
+        <ul>
+          <li>
+            <strong>Make a fake commute.</strong> Ten minutes of walking before
+            and after work. It sounds silly, but it's the difference between
+            "working from home" and "living at work."
+          </li>
+          <li>
+            <strong>Block focus time on your calendar.</strong> If it isn't
+            there, it'll get booked over.
+          </li>
+          <li>
+            <strong>Say when you're done.</strong> Nobody can see you leave, so
+            there's no natural end. Post a quick sign-off and close the laptop.
+          </li>
+          <li>
+            <strong>Eat away from the desk.</strong> A real break makes the
+            afternoon better than another hour of grinding.
+          </li>
+          <li>
+            <strong>Talk to people about non-work things.</strong> Remote can get
+            lonely. I schedule the occasional call with a teammate just to chat.
+            It's worth the half hour.
+          </li>
+        </ul>
+
+        <h2>Why I like it anyway</h2>
+        <ul>
+          <li>
+            <strong>I get my commute back.</strong> That's an hour or two a day
+            I can spend on sleep, exercise, or family.
+          </li>
+          <li>
+            <strong>Deep focus is easier.</strong> No one stops by my desk, and I
+            choose when to look at messages.
+          </li>
+          <li>
+            <strong>I can work with people anywhere.</strong> Teams aren't
+            limited to whoever lives near the office.
+          </li>
+          <li>
+            <strong>My writing got better.</strong> Remote work forces you to
+            explain things clearly, and clear writing usually means clear
+            thinking.
+          </li>
+          <li>
+            <strong>Everything leaves a trail.</strong> Decisions and answers
+            live in threads and docs instead of in someone's memory.
+          </li>
+          <li>
+            <strong>It saves money.</strong> Fewer lunches out, no transport
+            costs.
+          </li>
+        </ul>
+        <p>
+          It's not perfect. Isolation is real, and some problems are just faster
+          at a whiteboard. But the trade has been worth it for me.
+        </p>
+
+        <h2>Back to the bug</h2>
+        <p>
+          These days, when I'm stuck, I set the thirty-minute timer. When it
+          goes off, I write the question out properly, and about a third of the
+          time I find the answer while writing it. The rest of the time, someone
+          answers before I've finished my coffee.
+        </p>
+        <p>
+          Nobody has ever been annoyed that I asked. Not once. They're more
+          annoyed when I disappear for three hours and come back with a deadline
+          problem.
+        </p>
+        <p>
+          If you work remotely, I'd like to hear which habit saved you. You can
+          find me on the <a href="../contact.html">contact page</a>.
+        </p>
+      </article>
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2025 Muhammad Osama. Made with ❤️ and lots of coffee.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
